@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamishibai Klanggeschichten</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('startbild.jpg'); /* Passe den Pfad ggf. an */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            color: white;
+        }
+
+        h1 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 0.5em 1em;
+            border-radius: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5em;
+        }
+
+        li {
+            margin: 1em 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.2em;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #000;
+            padding: 0.5em 1em;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        @media (max-width: 600px) {
+            a {
+                font-size: 1em;
+                padding: 0.6em 1.2em;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kamishibai Klanggeschichten</h1>
+    <ul>
+        <li><a href="the_journey_of_the_fox/fox_bild1.html">The Journey of the Fox</a></li>
+        <li><a href="das_verlorene_lied/lied_bild1.html">Das verlorene Lied</a></li>
+    </ul>
+</body>
+</html>
