@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>das_verlorene_lied/lied_bild1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("img/hintergrund2.jpg"); /* passe den Dateinamen ggf. an */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .top-area {
+            padding: 20px 10px 10px;
+            background: rgba(0, 0, 0, 0.4); /* leicht dunkler Hintergrund für Lesbarkeit */
+        }
+
+        audio {
+            margin-top: 10px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .nav-button {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-area">
+        <h1>Das verlorene Lied</h1>
+        <p>Die Stille in der Mauer</p>
+        <audio controls autoplay>
+            <source src="audio/lied_bild1.mp3" type="audio/mpeg">
+            Dein Browser unterstützt keine Audio-Wiedergabe.
+        </audio>
+    </div>
+
+    <div class="navigation">
+        <a href="../index.html" class="nav-button">⬅️ Zurück</a>
+        <a href="lied_bild2.html" class="nav-button">➡️ Weiter</a>
+    </div>
+</body>
+</html>
